@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="500px" style="border:2px solid" ></canvas>
+    <script type="application/JavaScript" >
+        var c=document.querySelector("#myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath(); //start a new path
+        ctx.arc(180,150,100,0*Math.PI,1.5*Math.PI); //x,y,r,start angle,end angle
+        ctx.stroke();
+    </script>
+</body>
+</html>
